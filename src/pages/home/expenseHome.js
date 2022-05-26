@@ -1,6 +1,5 @@
 import React from 'react'
 import ExpensePiechart from '../../components/charts/ExpensePiechart'
-import Piechart from '../../components/charts/ExpensePiechart'
 import Sidebar from '../../components/dashboard/Sidebar'
 import ExpenseList from '../../components/expense-list/ExpenseList'
 import Input from '../../components/Input/Input'

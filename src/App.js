@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from './components/header/Header'
 import ExpenseHome from './pages/home/expenseHome'
 import './App.css'
 import {BrowserRouter, BrowserRouter as Router , Route, Routes} from 'react-router-dom'

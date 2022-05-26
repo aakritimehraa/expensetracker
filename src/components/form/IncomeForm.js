@@ -2,12 +2,9 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
-import { categories } from '../../constants/expenseCategory';
 import { incomeCategories } from '../../constants/incomeCategories';
-import { addExpense } from '../../redux/action/expenses';
 import { addIncome } from '../../redux/action/incomes';
-import IncomeList from '../income-list/IncomeList';
-import Input from '../Input/Input';
+
 
 function IncomeForm() {
 

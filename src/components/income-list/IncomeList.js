@@ -2,7 +2,6 @@ import moment from 'moment';
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import TotalExpense from '../expense-list/TotalExpense';
-import Input from '../Input/Input';
 import IncomeCard from './IncomeCard'
 
 function Incomelist() {

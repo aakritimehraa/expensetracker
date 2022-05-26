@@ -1,7 +1,6 @@
 import React from 'react'
 import Sidebar from '../../components/dashboard/Sidebar'
 import Form from '../../components/form/Form'
-import Input from '../../components/Input/Input'
 import'./expense.css'
 function Expense() {
   return (

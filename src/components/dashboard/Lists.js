@@ -1,7 +1,6 @@
 import moment from 'moment'
 import React from 'react'
 import { useSelector } from 'react-redux'
-import IncomeCard from '../income-list/IncomeCard'
 import './Dashboard.css'
 
 function Lists() {
