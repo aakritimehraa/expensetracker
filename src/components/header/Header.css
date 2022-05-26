@@ -1,0 +1,21 @@
+.header-container{
+    margin: auto;
+    color: #ECDBBA;
+}
+
+.header{
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+.header-logo i{
+    margin-left: 10px;
+}
