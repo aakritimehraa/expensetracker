@@ -16,8 +16,8 @@ function Sidebar() {
                     <Link className='link' to='/expenses'>
                         <li><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                             Expense List</li></Link>
-                    <li><i class="fa fa-line-chart" aria-hidden="true"></i>
-                        Charts</li>
+                   <Link className='link' to='/'><li><i class="fa fa-line-chart" aria-hidden="true"></i>
+                        Charts</li></Link>
                 </ul>
             </div>
 

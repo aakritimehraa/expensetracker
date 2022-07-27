@@ -12,7 +12,6 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 function ExpenseList() {
 
   const { expenseList: list, query } = useSelector(state => state.expenses)
-  const filteredList = list.filter(item => item.title.includes(query))
 
 
   var total = 0;
@@ -27,10 +26,11 @@ function ExpenseList() {
     <div className='expense-container'>
        
       <div className=''>
-      {filteredList?.map(item => (
+      {list?.map(item => (
         <Card item={item} />
       ))
-      }
+      
+    }
       <TotalExpense title = 'expense' total={total} />
       </div>
 

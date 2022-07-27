@@ -1,10 +1,9 @@
 import React from 'react'
 import ExpenseHome from './pages/home/expenseHome'
 import './App.css'
-import {BrowserRouter, BrowserRouter as Router , Route, Routes} from 'react-router-dom'
+import {BrowserRouter,Route, Routes} from 'react-router-dom'
 import Expense from './pages/add-expense/expense'
 
-import IncomeForm from './components/form/IncomeForm'
 import Dashboard from './pages/dashboard/dashboard'
 import IncomeHome from './pages/home/incomeHome'
 import Income from './pages/add-income/income'

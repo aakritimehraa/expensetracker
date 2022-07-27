@@ -22,7 +22,6 @@ function Input() {
             
             <div className='searchbar'>
 
-            <input className='searchinput' placeholder='search' value={query} onChange={(e) => handleQuery(e)} />
             <Link to= {window.location.pathname === '/expenses' ? '/expense' : '/income'} className='link'>
         <div className='btn'><i class="fa fa-plus" aria-hidden="true"></i>
             Add</div>
