@@ -20,7 +20,7 @@ ChartJS.register(
     Legend
 );
 function IncomeChart() {
-    const { incomeList: list, query } = useSelector(state => state.incomes)
+    const { incomeList: list } = useSelector(state => state.incomes)
 
     const totalINamount = {
         salary: 0,
@@ -81,7 +81,7 @@ function IncomeChart() {
           {
             label: 'income',
             data: Object.values(totalINamount),
-            backgroundColor: ['rgba(22, 87, 254, 0.6)' ,' rgba(22, 87, 254, 1)','rgba(22, 87, 254, 0.6)' ,' rgba(22, 87, 254, 1)','rgba(22, 87, 254, 0.6)' ,' rgba(22, 87, 254, 1)' ],
+            backgroundColor: 'rgba(22, 254, 87, 0.6)', // Change the bar color to green
           },
          
         ],

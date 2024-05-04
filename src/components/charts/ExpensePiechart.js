@@ -1,6 +1,6 @@
 import React from 'react'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Doughnut, Pie } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 import { useSelector } from 'react-redux';
 import './Piechart.css'
 
@@ -10,7 +10,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 function ExpensePiechart() {
   
-  const { expenseList: list, query } = useSelector(state => state.expenses)
+  const { expenseList: list } = useSelector(state => state.expenses)
 
 
   const totalamount = {

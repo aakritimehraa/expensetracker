@@ -1,0 +1,37 @@
+[debug] [2024-05-04T17:09:39.600Z] ----------------------------------------------------------------------
+[debug] [2024-05-04T17:09:39.604Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakri\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2024-05-04T17:09:39.605Z] CLI Version:   11.0.1
+[debug] [2024-05-04T17:09:39.605Z] Platform:      win32
+[debug] [2024-05-04T17:09:39.605Z] Node Version:  v20.11.1
+[debug] [2024-05-04T17:09:39.605Z] Time:          Sat May 04 2024 22:39:39 GMT+0530 (India Standard Time)
+[debug] [2024-05-04T17:09:39.606Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-04T17:09:39.610Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-05-04T17:09:39.796Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-04T17:09:39.796Z] > authorizing via signed-in user (aakritimehrasa@gmail.com)
+[debug] [2024-05-04T17:09:39.796Z] [iam] checking project solid-9fffe for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-04T17:09:39.798Z] > refreshing access token with scopes: []
+[debug] [2024-05-04T17:09:39.799Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-05-04T17:09:40.049Z] <<< HTTP RESPONSE 400 {"date":"Sat, 04 May 2024 20:23:17 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-05-04T17:09:40.053Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/solid-9fffe:testIamPermissions [none]
+[debug] [2024-05-04T17:09:40.054Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/solid-9fffe:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-04T17:09:40.436Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-05-04T17:09:40.436Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-05-04T17:09:41.628Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/solid-9fffe:testIamPermissions 401
+[debug] [2024-05-04T17:09:41.629Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/solid-9fffe:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"cloudresourcemanager.googleapis.com","method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions"}}]}}
+[debug] [2024-05-04T17:09:41.630Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-05-04T17:09:41.631Z] > refreshing access token with scopes: []
+[debug] [2024-05-04T17:09:41.631Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-05-04T17:09:41.724Z] <<< HTTP RESPONSE 400 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 04 May 2024 20:23:19 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2024-05-04T17:09:41.726Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/solid-9fffe [none]
+[debug] [2024-05-04T17:09:42.269Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/solid-9fffe 401
+[debug] [2024-05-04T17:09:42.269Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/solid-9fffe {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-05-04T17:09:42.270Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-05-04T17:09:42.474Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\aakri\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\aakri\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project solid-9fffe. Please make sure the project exists and your account has permission to access it.

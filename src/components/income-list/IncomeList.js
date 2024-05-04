@@ -1,6 +1,6 @@
 import moment from 'moment';
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import {  useSelector } from 'react-redux'
 import TotalExpense from '../expense-list/TotalExpense';
 import IncomeCard from './IncomeCard'
 
@@ -8,7 +8,7 @@ function Incomelist() {
 
 
 
-  const { incomeList: list, query } = useSelector(state => state.incomes)
+  const { incomeList: list } = useSelector(state => state.incomes)
 
 
   var total = 0;

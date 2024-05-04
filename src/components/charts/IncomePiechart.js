@@ -1,12 +1,12 @@
 import React from 'react'
-import { Doughnut, Pie } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 import { useSelector } from 'react-redux';
 import './Piechart.css'
 
 
 function IncomePiechart() {
 
-    const { incomeList: list, query } = useSelector(state => state.incomes)
+    const { incomeList: list } = useSelector(state => state.incomes)
 
     const totalINamount = {
         salary: 0,

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useSelector } from 'react-redux'
 import Card from './Card'
 import './ExpenseList.css'
@@ -11,7 +11,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 function ExpenseList() {
 
-  const { expenseList: list, query } = useSelector(state => state.expenses)
+  const { expenseList: list } = useSelector(state => state.expenses)
 
 
   var total = 0;

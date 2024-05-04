@@ -7,16 +7,7 @@ import './input.css'
 
 function Input() {
 
-    const [query, setQuery] = useState('')
-
-    const dispatch = useDispatch()
-    const handleQuery = (e) => {
-        setQuery(e.target.value)
-        {window.location.pathname === "/expenses" ?
-        dispatch(searchExpense(e.target.value)) : 
-        dispatch(searchIncome(e.target.value)) 
-}
-    }
+    
     return (
         <div className='input'>
             

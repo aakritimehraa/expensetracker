@@ -23,7 +23,7 @@ ChartJS.register(
 
 function ExpenseChart() {
 
-    const { expenseList: list, query } = useSelector(state => state.expenses)
+    const { expenseList: list } = useSelector(state => state.expenses)
  const totalamount = {
     food: 0,
     education: 0,
