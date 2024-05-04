@@ -71,6 +71,8 @@ function Form() {
                 
             />
 
+            <div className='input-wrapper'>
+
             <div className='form-input'>
                 <label>Title</label>
                 <input placeholder='title' value={title} onChange={(e) => { setTitle(e.target.value) }} />
@@ -94,12 +96,14 @@ function Form() {
                     </div>}
                 </div>
             </div>
+            <div className='form-submit' onClick={() => handleSubmit()}><i class="fa fa-plus" aria-hidden="true"></i>
+                Add</div>
+
+            </div>
 
             
         </div>
-        <div className='form-submit' onClick={() => handleSubmit()}><i class="fa fa-plus" aria-hidden="true"></i>
-                Add</div>
-
+     
         </>
     )
 }

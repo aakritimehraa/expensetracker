@@ -36,7 +36,7 @@ function IncomeCard({item}) {
           <p className='time'>{time}</p>
           </div>
           <div className='amount'>
-          <p onClick={handleDelete}><i style={{color:'white' , marginTop:'10px'}} class="fa fa-trash" aria-hidden="true"></i>
+          <p onClick={handleDelete}><i style={{color:'white' , marginTop:'10px' , cursor:'pointer'}} class="fa fa-trash" aria-hidden="true"></i>
 </p>
            <p style={{color:'#2D4263'}}> ${item.incomeamount}</p>
      

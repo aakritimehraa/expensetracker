@@ -24,7 +24,7 @@ function Input() {
 
             <Link to= {window.location.pathname === '/expenses' ? '/expense' : '/income'} className='link'>
         <div className='btn'><i class="fa fa-plus" aria-hidden="true"></i>
-            Add</div>
+            </div>
             </Link>
         </div>
        

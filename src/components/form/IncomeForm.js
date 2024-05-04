@@ -75,7 +75,8 @@ function IncomeForm() {
                 closeOnClick
                 
             />
-
+           
+           <div className='input-wrapper'>
             <div className='form-input'>
                 <label>Title</label>
                 <input placeholder='title' value={incometitle} onChange={(e) => { setIncomeTitle(e.target.value) }} />
@@ -99,11 +100,13 @@ function IncomeForm() {
                     </div>}
                 </div>
             </div>
-
-            
-        </div>
-        <div className='form-submit' onClick={() => handleSubmit()}><i class="fa fa-plus" aria-hidden="true"></i>
+            <div className='form-submit' onClick={() => handleSubmit()}><i class="fa fa-plus" aria-hidden="true"></i>
                 Add</div>
+            
+            </div>
+      
+        </div>
+      
 
         </>    
     )
